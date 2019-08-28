@@ -13,7 +13,7 @@ $$
 
 The derivatives for this function is written as
 $$
-   \frac{\partial J(\theta)}{\partial \theta_j} 
+   \frac{\partial }{\partial \theta_j} J(\theta)
    = \frac{1}{m} \sum_{i=1}^{m} 
    [
        -y^{(i)} \log( h_{\theta}(x^{(i)}) ) 
