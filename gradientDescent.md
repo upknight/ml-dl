@@ -24,9 +24,15 @@ $$
    = \frac{1}{m} \sum_{i=1}^{m} 
    \Big[
       \frac{\partial h_{\theta}(x^{(i)})}{\partial \theta_j}
-      (
+      \Big(
       - \frac{y^{(i)}}{h_{\theta}(x^{(i)})} + \frac{1-y^{(i)}}{1-h_{\theta}(x^{(j)})}
-      )
+      \Big)
    \Big] 
 $$
+$$
+   = \frac{1}{m} \sum_{i=1}^{m} 
+   \Big( h_{\theta}(x^{(i)}) - y ^{(i)} \Big)x_{j}^{(i)}
+   \frac{\exp{-x^{(i)}}}{(1+\exp{-x^{(i)}})^2}
+$$
+
 
