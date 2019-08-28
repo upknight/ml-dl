@@ -27,7 +27,7 @@ $$
       \Big(
       - \frac{y^{(i)}}{h_{\theta}(x^{(i)})} + \frac{1-y^{(i)}}{1-h_{\theta}(x^{(j)})}
       \Big)
-   \Big] 
+   \Big]
 $$
 $$
    = \frac{1}{m} \sum_{i=1}^{m} 
@@ -35,5 +35,14 @@ $$
    \frac{e^{-x^{(i)}}}{(1+e^{-x^{(i)}})^2}
    \frac{1}{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}
 $$
+$$
+   = \frac{1}{m} \sum_{i=1}^{m} 
+   \Big( h_{\theta}(x^{(i)}) - y ^{(i)} \Big)x_{j}^{(i)}
+   \frac{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}
+$$
+
+
+
+
 
 
