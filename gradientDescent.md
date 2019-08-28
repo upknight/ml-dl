@@ -13,36 +13,38 @@ $$
 
 The derivatives for this function is written as
 $$
-   \frac{\partial }{\partial \theta_j} J(\theta)
-   = \frac{1}{m} \sum_{i=1}^{m} 
-   \Big[
-       -y^{(i)} \log( h_{\theta}(x^{(i)}) ) 
-       -(1-y^{(i)}) \log( 1 - h_{\theta}(x^{(i)}) ) 
-   \Big]
+\frac{\partial }{\partial \theta_j} J(\theta) = \frac{1}{m} \sum_{i=1}^{m} 
+\Big[
+-y^{(i)} \log( h_{\theta}(x^{(i)}) )-(1-y^{(i)}) \log( 1 - h_{\theta}(x^{(i)}) )
+\Big]
 $$
 $$
-   = \frac{1}{m} \sum_{i=1}^{m} 
-   \Big[
-      \frac{\partial h_{\theta}(x^{(i)})}{\partial \theta_j}
-      \Big(
-      - \frac{y^{(i)}}{h_{\theta}(x^{(i)})} + \frac{1-y^{(i)}}{1-h_{\theta}(x^{(j)})}
-      \Big)
-   \Big]
+= \frac{1}{m} \sum_{i=1}^{m} 
+\Big[
+ \frac{\partial h_{\theta}(x^{(i)})}{\partial \theta_j}
+ \Big(
+  -\frac{y^{(i)}}{h_{\theta}(x^{(i)})} + \frac{1-y^{(i)}}{1-h_{\theta}(x^{(j)})}
+ \Big)
+\Big]
 $$
 $$
-   = \frac{1}{m} \sum_{i=1}^{m} 
-   \Big( h_{\theta}(x^{(i)}) - y ^{(i)} \Big)x_{j}^{(i)}
-   \frac{e^{-x^{(i)}}}{(1+e^{-x^{(i)}})^2}
-   \frac{1}{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}
+=\frac{1}{m} \sum_{i=1}^{m} 
+\Big( 
+ h_{\theta}(x^{(i)}) - y ^{(i)} 
+\Big)x_{j}^{(i)}
+\frac{e^{-x^{(i)}}}{(1+e^{-x^{(i)}})^2}
+\frac{1}{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}
 $$
 $$
-   = \frac{1}{m} \sum_{i=1}^{m} 
-   \Big( h_{\theta}(x^{(i)}) - y ^{(i)} \Big)x_{j}^{(i)}
-   \frac{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}
+=\frac{1}{m} \sum_{i=1}^{m}
+ \Big(
+   h_{\theta}(x^{(i)})-y^{(i)}
+ \Big)x_{j}^{(i)}
+ \frac{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}
 $$
 $$
-   = \frac{1}{m} \sum_{i=1}^{m} 
-   \Big( h_{\theta}(x^{(i)}) - y ^{(i)} \Big)x_{j}^{(i)}
+=\frac{1}{m} \sum_{i=1}^{m} 
+ \Big( h_{\theta}(x^{(i)}) - y ^{(i)} \Big)x_{j}^{(i)}
 $$
 
 
