@@ -40,7 +40,10 @@ $$
    \Big( h_{\theta}(x^{(i)}) - y ^{(i)} \Big)x_{j}^{(i)}
    \frac{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}{h_{\theta}(x^{(i)})(1-h_{\theta}(x^{(i)}))}
 $$
-
+$$
+   = \frac{1}{m} \sum_{i=1}^{m} 
+   \Big( h_{\theta}(x^{(i)}) - y ^{(i)} \Big)x_{j}^{(i)}
+$$
 
 
 
